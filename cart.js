@@ -1,8 +1,14 @@
 let itemNames = ["Courchevel Ski Chalet", "Private Chef", "Rolls-Royce Phantom", "Abu Dhabi GP Weekend"];
 let itemDetails = ["Courchevel 1850, France - per night", "Select tier - per hour", "Chauffeured - per hour", "4 nights - per person"];
-let itemPrices = [5200, 95, 180, 6500];
+let itemPrices = [19000, 350, 650, 24000];
 let itemQty = [3, 4, 3, 2];
 let startQty = [3, 4, 3, 2];
+
+function formatPrice(value) {
+    return "AED " + value.toLocaleString("en-AE", {
+        maximumFractionDigits: 0
+    });
+}
 
 function showCart() {
     $("#cartBody").empty();
@@ -19,13 +25,13 @@ function showCart() {
                 "<tr>" +
                 "<td>" + itemNames[i] + "</td>" +
                 "<td>" + itemDetails[i] + "</td>" +
-                "<td>$" + itemPrices[i].toFixed(2) + "</td>" +
+                "<td>" + formatPrice(itemPrices[i]) + "</td>" +
                 "<td><ul class='pagination mb-0'>" +
                 "<li class='page-item'><button type='button' class='page-link minus-btn' value='" + i + "'>-</button></li>" +
                 "<li class='page-item'><span class='page-link qty'>" + itemQty[i] + "</span></li>" +
                 "<li class='page-item'><button type='button' class='page-link plus-btn' value='" + i + "'>+</button></li>" +
                 "</ul></td>" +
-                "<td>$" + lineTotal.toFixed(2) + "</td>" +
+                "<td>" + formatPrice(lineTotal) + "</td>" +
                 "<td><button type='button' class='btn btn-outline-danger btn-sm remove-btn' value='" + i + "'>Remove</button></td>" +
                 "</tr>"
             );
@@ -36,7 +42,7 @@ function showCart() {
         $("#cartBody").append("<tr><td colspan='6'>Your cart is empty. <a href='catalogue.html'>Browse the catalogue</a></td></tr>");
     }
 
-    $("#subtotal").html("Subtotal: $" + subtotal.toFixed(2));
+    $("#subtotal").html("Subtotal: " + formatPrice(subtotal));
 
     $(".plus-btn").click(
         (evt) => {

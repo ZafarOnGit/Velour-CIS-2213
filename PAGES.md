@@ -61,7 +61,7 @@ Front-end web application for the Velour luxury services platform (CIS2213 – F
 **Responsive design:** Cards use `col-md-6 col-lg-4` – 1 per row on phones, 2 on tablets, 3 on desktops. Card images have a fixed 190px height with `object-fit: cover` so cards line up.
 
 **Interactive elements:**
-- *More details* toggles a hidden starting price (e.g. "From $1,800 per night")
+- *More details* toggles a hidden starting price (e.g. "From AED 6,600 per night")
 - Card hover glow and lift
 
 **Form validation:** None.

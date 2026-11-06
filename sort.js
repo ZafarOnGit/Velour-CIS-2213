@@ -1,6 +1,5 @@
 let sortCards = [];
 let sortRows = [];
-let sortClasses = [];
 let sortNames = [];
 let sortPrices = [];
 let sortSections = [];
@@ -26,7 +25,6 @@ function readCards() {
 
                 sortCards[i] = card;
                 sortRows[i] = row;
-                sortClasses[i] = card.getAttribute("class");
                 sortNames[i] = card.querySelector(".card-title").innerText;
                 sortPrices[i] = price;
 
@@ -42,6 +40,12 @@ function comesBefore(a, b, type) {
         return sortPrices[a] < sortPrices[b];
     }
     else if (type == "price-high") {
+        if (sortPrices[a] == 1000000) {
+            return false;
+        }
+        if (sortPrices[b] == 1000000) {
+            return true;
+        }
         return sortPrices[a] > sortPrices[b];
     }
     else if (type == "name-az") {
@@ -76,7 +80,6 @@ function showSorted(type) {
 
     for (let k = 0; k < order.length; k++) {
         let i = order[k];
-        sortCards[i].setAttribute("class", "col-md-6 col-lg-3");
         sortedRow.appendChild(sortCards[i]);
     }
 
@@ -85,11 +88,14 @@ function showSorted(type) {
     }
     document.querySelector(".filter-bar").style.display = "none";
     document.querySelector("#sortedSection").style.display = "block";
+
+    if (document.querySelector("#tiers") != null) {
+        document.querySelector("#tiers").style.display = "none";
+    }
 }
 
 function showRelevance() {
     for (let i = 0; i < sortCards.length; i++) {
-        sortCards[i].setAttribute("class", sortClasses[i]);
         sortRows[i].appendChild(sortCards[i]);
     }
 
@@ -98,6 +104,10 @@ function showRelevance() {
     }
     document.querySelector("#sortedSection").style.display = "none";
     document.querySelector(".filter-bar").style.display = "block";
+
+    if (document.querySelector("#tiers") != null) {
+        document.querySelector("#tiers").style.display = "block";
+    }
 
     let bar = document.querySelector(".filter-bar");
     let button = bar.firstElementChild;
