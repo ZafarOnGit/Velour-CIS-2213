@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Background-checked chefs, butlers, pilots and security staff in three experience tiers.">
+    <title>Velour | Vetted Staff</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="index.html">VELOUR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown" id="catalogueMenu">
+                            <a class="nav-link dropdown-toggle active" href="catalogue.html" id="catalogueDropdown">Catalogue</a>
+                            <ul class="dropdown-menu" id="catalogueList" aria-labelledby="catalogueDropdown">
+                                <li><a class="dropdown-item" href="stays.html">Luxury Stays</a></li>
+                                <li><a class="dropdown-item" href="events.html">Exclusive Events</a></li>
+                                <li><a class="dropdown-item" href="travel.html">Private Travel</a></li>
+                                <li><a class="dropdown-item" href="vetted-staff.html">Vetted Staff</a></li>
+                                <li><a class="dropdown-item" href="experiences.html">Experiences</a></li>
+                                <li><a class="dropdown-item" href="vacations.html">Vacations</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="booking.html">My Bookings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid px-0">
+        <div class="container my-5">
+            <header class="page-header mb-4">
+                <h1 class="text-center fw-bold mb-2 page-title">Vetted Staff</h1>
+                <p class="text-center lead mb-4">Every professional is background checked, has their references verified and is interviewed in person before joining Velour.</p>
+            </header>
+            <div class="filter-bar mb-4">
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" id="filterAll" value="all">All</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="household">Household</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="protection">Protection and Transport</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="lifestyle">Lifestyle</button>
+            </div>
+            <div class="sort-bar mb-4" id="sortBar">
+                <label for="sortBy" class="me-2">Sort by</label>
+                <select id="sortBy" class="form-select d-inline-block w-auto">
+                    <option value="relevance">Relevance</option>
+                    <option value="price-low">Price: low to high</option>
+                    <option value="price-high">Price: high to low</option>
+                    <option value="name-az">Name: A to Z</option>
+                    <option value="name-za">Name: Z to A</option>
+                </select>
+            </div>
+
+            <section class="category-section" id="tiers">
+                <h2 class="fw-bold mt-5 mb-3">Our Tiers</h2>
+                <p>Each role comes in three tiers, based on experience.</p>
+                <div class="table-responsive">
+                    <table class="table table-hover table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Role</th>
+                                <th scope="col">Select</th>
+                                <th scope="col">Premier</th>
+                                <th scope="col">Elite</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Private Chef</th>
+                                <td>5+ years in fine dining</td>
+                                <td>10+ years as head chef</td>
+                                <td>20+ years, has led Michelin-starred kitchens</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pilot</th>
+                                <td>Commercial licence, 3,000+ hours</td>
+                                <td>Heavy-jet rated, 7,000+ hours</td>
+                                <td>10,000+ hours, former VIP flight captain</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Security</th>
+                                <td>Licensed guard</td>
+                                <td>Close-protection certified, 5+ years</td>
+                                <td>Ex-military, leads protection teams</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Chauffeur</th>
+                                <td>Professional licence, 3+ years</td>
+                                <td>Defensive-driving certified</td>
+                                <td>Security-trained, drives armoured vehicles</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Butler</th>
+                                <td>Hospitality trained</td>
+                                <td>Butler academy graduate</td>
+                                <td>20+ years in royal or estate households</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="category-section" id="household">
+                <h2 class="fw-bold mt-5 mb-3">Household</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 item household">
+                        <div class="card h-100 hover-card">
+                            <a href="products/private-chef.html"><img src="assets/chef.jpeg" class="card-img-top img-fluid" alt="Private Chef"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/private-chef.html">Private Chef</a></h5>
+                                <p class="card-info">Select $95 &middot; Premier $180 &middot; Elite $350 per hour</p>
+                                <p class="card-text">Plans the menu with you, does the shopping, cooks and leaves the kitchen spotless.</p>
+                                <p class="price">From $95 / hour</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Private Chef" value="95">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item household">
+                        <div class="card h-100 hover-card">
+                            <a href="products/butler.html"><img src="assets/butler.jpeg" class="card-img-top img-fluid" alt="Butler"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/butler.html">Butler</a></h5>
+                                <p class="card-info">Select $95 &middot; Premier $180 &middot; Elite $350 per hour</p>
+                                <p class="card-text">Runs the house day to day: unpacking, wardrobe care, table service and greeting guests.</p>
+                                <p class="price">From $95 / hour</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Butler" value="95">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item household">
+                        <div class="card h-100 hover-card">
+                            <a href="products/house-manager.html"><img src="assets/butler.jpeg" class="card-img-top img-fluid" alt="House Manager"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/house-manager.html">House Manager</a></h5>
+                                <p class="card-info">Select $150 &middot; Premier $250 &middot; Elite $400 per hour</p>
+                                <p class="card-text">Manages the other staff, suppliers and repairs, so the house runs while you are away.</p>
+                                <p class="price">From $150 / hour</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="House Manager" value="150">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item household">
+                        <div class="card h-100 hover-card">
+                            <a href="products/nanny-or-governess.html"><img src="assets/butler.jpeg" class="card-img-top img-fluid" alt="Nanny or Governess"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/nanny-or-governess.html">Nanny or Governess</a></h5>
+                                <p class="card-info">Select $110 &middot; Premier $200 &middot; Elite $350 per hour</p>
+                                <p class="card-text">First-aid trained. Elite governesses can also teach French, Arabic or Mandarin.</p>
+                                <p class="price">From $110 / hour</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Nanny or Governess" value="110">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section" id="protection">
+                <h2 class="fw-bold mt-5 mb-3">Protection and Transport</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 item protection">
+                        <div class="card h-100 hover-card">
+                            <a href="products/close-protection-officer.html"><img src="assets/chaueffeur.jpeg" class="card-img-top img-fluid" alt="Close Protection Officer"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/close-protection-officer.html">Close Protection Officer</a></h5>
+                                <p class="card-info">Select $150 &middot; Premier $275 &middot; Elite $450 per hour</p>
+                                <p class="card-text">Plans routes, checks venues before you arrive and stays beside you in public.</p>
+                                <p class="price">From $150 / hour</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Close Protection Officer" value="150">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item protection">
+                        <div class="card h-100 hover-card">
+                            <a href="products/chauffeur.html"><img src="assets/limo chauffeur.jpeg" class="card-img-top img-fluid" alt="Chauffeur"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/chauffeur.html">Chauffeur</a></h5>
+                                <p class="card-info">Select $95 &middot; Premier $180 &middot; Elite $300 per hour</p>
+                                <p class="card-text">Knows the city, keeps the car ready and waits for as long as you need.</p>
+                                <p class="price">From $95 / hour</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Chauffeur" value="95">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item protection">
+                        <div class="card h-100 hover-card">
+                            <a href="products/private-pilot.html"><img src="assets/privateplane.jpeg" class="card-img-top img-fluid" alt="Private Pilot"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/private-pilot.html">Private Pilot</a></h5>
+                                <p class="card-info">Select $250 &middot; Premier $400 &middot; Elite $650 per hour</p>
+                                <p class="card-text">Flies your own aircraft or joins a charter crew. Elite pilots have more than 10,000 hours.</p>
+                                <p class="price">From $250 / hour</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Private Pilot" value="250">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section" id="lifestyle">
+                <h2 class="fw-bold mt-5 mb-3">Lifestyle</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 item lifestyle">
+                        <div class="card h-100 hover-card">
+                            <a href="products/personal-trainer.html"><img src="assets/butler.jpeg" class="card-img-top img-fluid" alt="Personal Trainer"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/personal-trainer.html">Personal Trainer</a></h5>
+                                <p class="card-info">Select $120 &middot; Premier $220 &middot; Elite $350 per hour</p>
+                                <p class="card-text">Trains you at home, in your hotel or on your yacht, with a plan built around your goals.</p>
+                                <p class="price">From $120 / hour</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Personal Trainer" value="120">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item lifestyle">
+                        <div class="card h-100 hover-card">
+                            <a href="products/personal-assistant.html"><img src="assets/butler.jpeg" class="card-img-top img-fluid" alt="Personal Assistant"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/personal-assistant.html">Personal Assistant</a></h5>
+                                <p class="card-info">Select $100 &middot; Premier $180 &middot; Elite $300 per hour</p>
+                                <p class="card-text">Handles your calendar, bookings, emails and errands.</p>
+                                <p class="price">From $100 / hour</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Personal Assistant" value="100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item lifestyle">
+                        <div class="card h-100 hover-card">
+                            <a href="products/yacht-crew.html"><img src="assets/ship.jpeg" class="card-img-top img-fluid" alt="Yacht Crew"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/yacht-crew.html">Yacht Crew</a></h5>
+                                <p class="card-info">Select $150 &middot; Premier $250 &middot; Elite $400 per hour</p>
+                                <p class="card-text">Deckhands, stewards and engineers for a single trip or a full season.</p>
+                                <p class="price">From $150 / hour</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Yacht Crew" value="150">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sortedSection">
+                <div class="row g-4" id="sortedRow">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <section class="mt-4">
+                <div class="row text-center d-flex justify-content-center pt-3">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="catalogue.html">Catalogue</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="cart.html">Cart</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="booking.html">My Bookings</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="contact.html">Contact</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="login.html">Login</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="register.html">Register</a></h6>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="my-4">
+
+            <section class="mb-4">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>Velour is an on-demand luxury services platform: stays, exclusive events, private travel, vetted staff, experiences and vacations, booked in minutes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <p>&copy; 2026 Velour. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="sort.js"></script>
+</body>
+</html>

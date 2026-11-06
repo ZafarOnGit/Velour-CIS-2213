@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Charter private jets, helicopters, yachts and chauffeured cars by the hour, day or week.">
+    <title>Velour | Private Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="index.html">VELOUR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown" id="catalogueMenu">
+                            <a class="nav-link dropdown-toggle active" href="catalogue.html" id="catalogueDropdown">Catalogue</a>
+                            <ul class="dropdown-menu" id="catalogueList" aria-labelledby="catalogueDropdown">
+                                <li><a class="dropdown-item" href="stays.html">Luxury Stays</a></li>
+                                <li><a class="dropdown-item" href="events.html">Exclusive Events</a></li>
+                                <li><a class="dropdown-item" href="travel.html">Private Travel</a></li>
+                                <li><a class="dropdown-item" href="vetted-staff.html">Vetted Staff</a></li>
+                                <li><a class="dropdown-item" href="experiences.html">Experiences</a></li>
+                                <li><a class="dropdown-item" href="vacations.html">Vacations</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="booking.html">My Bookings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid px-0">
+        <div class="container my-5">
+            <header class="page-header mb-4">
+                <h1 class="text-center fw-bold mb-2 page-title">Private Travel</h1>
+                <p class="text-center lead mb-4">Jets, yachts and cars, booked by the hour, the day or the week.</p>
+            </header>
+            <div class="filter-bar mb-4">
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" id="filterAll" value="all">All</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="air">Air</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="sea">Sea</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="road">Road</button>
+            </div>
+            <div class="sort-bar mb-4" id="sortBar">
+                <label for="sortBy" class="me-2">Sort by</label>
+                <select id="sortBy" class="form-select d-inline-block w-auto">
+                    <option value="relevance">Relevance</option>
+                    <option value="price-low">Price: low to high</option>
+                    <option value="price-high">Price: high to low</option>
+                    <option value="name-az">Name: A to Z</option>
+                    <option value="name-za">Name: Z to A</option>
+                </select>
+            </div>
+
+            <section class="category-section" id="air">
+                <h2 class="fw-bold mt-5 mb-3">Air</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 item air">
+                        <div class="card h-100 hover-card">
+                            <a href="products/light-jet.html"><img src="assets/small - medium jet.jpeg" class="card-img-top img-fluid" alt="Light Jet"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/light-jet.html">Light Jet</a></h5>
+                                <p class="card-info">Up to 7 passengers &middot; around 3 hours range</p>
+                                <p class="card-text">Good for short hops such as Dubai to Muscat or Riyadh, and it can land at smaller airports.</p>
+                                <p class="price">$4,500 / hour</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Light Jet" value="4500">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item air">
+                        <div class="card h-100 hover-card">
+                            <a href="products/midsize-jet.html"><img src="assets/small - medium jet.jpeg" class="card-img-top img-fluid" alt="Midsize Jet"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/midsize-jet.html">Midsize Jet</a></h5>
+                                <p class="card-info">Up to 9 passengers &middot; around 6 hours range</p>
+                                <p class="card-text">Flies Dubai to Cairo or Istanbul non-stop, with a cabin you can stand up in.</p>
+                                <p class="price">$6,500 / hour</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Midsize Jet" value="6500">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item air">
+                        <div class="card h-100 hover-card">
+                            <a href="products/ultra-long-range-jet.html"><img src="assets/private jet.jpeg" class="card-img-top img-fluid" alt="Ultra-Long-Range Jet"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/ultra-long-range-jet.html">Ultra-Long-Range Jet</a></h5>
+                                <p class="card-info">Up to 14 passengers &middot; 14+ hours range</p>
+                                <p class="card-text">Dubai to New York without a fuel stop. Has a bedroom, a shower and a flight attendant.</p>
+                                <p class="price">Price on request</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="contact.html" class="btn btn-gold btn-sm w-100">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item air">
+                        <div class="card h-100 hover-card">
+                            <a href="products/helicopter-transfer.html"><img src="assets/privateplane.jpeg" class="card-img-top img-fluid" alt="Helicopter Transfer"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/helicopter-transfer.html">Helicopter Transfer</a></h5>
+                                <p class="card-info">Up to 6 passengers &middot; 15 to 45 minute flights</p>
+                                <p class="card-text">Downtown Dubai to the Palm in ten minutes, or Dubai to Abu Dhabi in about forty.</p>
+                                <p class="price">$2,000 / hour</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Helicopter Transfer" value="2000">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section" id="sea">
+                <h2 class="fw-bold mt-5 mb-3">Sea</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 item sea">
+                        <div class="card h-100 hover-card">
+                            <a href="products/day-yacht-60-ft.html"><img src="assets/ship.jpeg" class="card-img-top img-fluid" alt="Day Yacht, 60 ft"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/day-yacht-60-ft.html">Day Yacht, 60 ft</a></h5>
+                                <p class="card-info">Up to 12 guests &middot; 8 hours</p>
+                                <p class="card-text">Captain, deckhand, lunch on board and a swim stop off the Palm or the World Islands.</p>
+                                <p class="price">$3,500 / day</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Day Yacht, 60 ft" value="3500">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item sea">
+                        <div class="card h-100 hover-card">
+                            <a href="products/superyacht-week-charter.html"><img src="assets/AdobeStock_237379942.jpeg" class="card-img-top img-fluid" alt="Superyacht Week Charter"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/superyacht-week-charter.html">Superyacht Week Charter</a></h5>
+                                <p class="card-info">Up to 12 guests &middot; 7 days</p>
+                                <p class="card-text">A 50 m yacht with 13 crew, a chef and jet skis, in the Mediterranean or the Maldives.</p>
+                                <p class="price">$240,000 / week</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Superyacht Week Charter" value="240000">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item sea">
+                        <div class="card h-100 hover-card">
+                            <a href="products/speedboat-transfer.html"><img src="assets/ship.jpeg" class="card-img-top img-fluid" alt="Speedboat Transfer"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/speedboat-transfer.html">Speedboat Transfer</a></h5>
+                                <p class="card-info">Up to 8 guests &middot; 30 to 90 minutes</p>
+                                <p class="card-text">Airport to island or island to island, with your luggage loaded for you.</p>
+                                <p class="price">$650 / transfer</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Speedboat Transfer" value="650">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section" id="road">
+                <h2 class="fw-bold mt-5 mb-3">Road</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 item road">
+                        <div class="card h-100 hover-card">
+                            <a href="products/rolls-royce-phantom.html"><img src="assets/chaueffeur.jpeg" class="card-img-top img-fluid" alt="Rolls-Royce Phantom"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/rolls-royce-phantom.html">Rolls-Royce Phantom</a></h5>
+                                <p class="card-info">Up to 3 passengers &middot; 3-hour minimum</p>
+                                <p class="card-text">A uniformed chauffeur, chilled water and phone chargers in the back seat.</p>
+                                <p class="price">$180 / hour</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Rolls-Royce Phantom" value="180">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item road">
+                        <div class="card h-100 hover-card">
+                            <a href="products/stretch-limousine.html"><img src="assets/limo chauffeur.jpeg" class="card-img-top img-fluid" alt="Stretch Limousine"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/stretch-limousine.html">Stretch Limousine</a></h5>
+                                <p class="card-info">Up to 8 passengers &middot; hourly</p>
+                                <p class="card-text">Popular for weddings and nights out, with a bar and mood lighting inside.</p>
+                                <p class="price">$250 / hour</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Stretch Limousine" value="250">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item road">
+                        <div class="card h-100 hover-card">
+                            <a href="products/armoured-suv.html"><img src="assets/chaueffeur.jpeg" class="card-img-top img-fluid" alt="Armoured SUV"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/armoured-suv.html">Armoured SUV</a></h5>
+                                <p class="card-info">Up to 5 passengers &middot; hourly</p>
+                                <p class="card-text">B6-rated armour and a driver trained in defensive and evasive driving.</p>
+                                <p class="price">$450 / hour</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Armoured SUV" value="450">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item road">
+                        <div class="card h-100 hover-card">
+                            <a href="products/supercar-self-drive.html"><img src="assets/chaueffeur.jpeg" class="card-img-top img-fluid" alt="Supercar Self-Drive"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/supercar-self-drive.html">Supercar Self-Drive</a></h5>
+                                <p class="card-info">1-2 people &middot; 24 hours</p>
+                                <p class="card-text">A Lamborghini Hurac&aacute;n or Ferrari 296, delivered to your door with a full tank.</p>
+                                <p class="price">$1,500 / day</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Supercar Self-Drive" value="1500">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sortedSection">
+                <div class="row g-4" id="sortedRow">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <section class="mt-4">
+                <div class="row text-center d-flex justify-content-center pt-3">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="catalogue.html">Catalogue</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="cart.html">Cart</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="booking.html">My Bookings</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="contact.html">Contact</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="login.html">Login</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="register.html">Register</a></h6>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="my-4">
+
+            <section class="mb-4">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>Velour is an on-demand luxury services platform: stays, exclusive events, private travel, vetted staff, experiences and vacations, booked in minutes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <p>&copy; 2026 Velour. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="sort.js"></script>
+</body>
+</html>

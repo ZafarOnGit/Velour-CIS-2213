@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a booking and check the status of your Velour bookings.">
+    <title>Velour | My Bookings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="index.html">VELOUR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown" id="catalogueMenu">
+                            <a class="nav-link dropdown-toggle" href="catalogue.html" id="catalogueDropdown">Catalogue</a>
+                            <ul class="dropdown-menu" id="catalogueList" aria-labelledby="catalogueDropdown">
+                                <li><a class="dropdown-item" href="stays.html">Luxury Stays</a></li>
+                                <li><a class="dropdown-item" href="events.html">Exclusive Events</a></li>
+                                <li><a class="dropdown-item" href="travel.html">Private Travel</a></li>
+                                <li><a class="dropdown-item" href="vetted-staff.html">Vetted Staff</a></li>
+                                <li><a class="dropdown-item" href="experiences.html">Experiences</a></li>
+                                <li><a class="dropdown-item" href="vacations.html">Vacations</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="booking.html">My Bookings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid px-0">
+        <div class="container my-5">
+            <header class="page-header mb-4">
+                <h1 class="text-center fw-bold mb-4 page-title">Request a Booking</h1>
+            </header>
+            <section class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="bookingForm" class="card login-card p-4">
+                        <fieldset>
+                            <legend class="h4">Service</legend>
+                            <div class="mb-3">
+                                <label for="category" class="form-label">Category</label>
+                                <select id="category" name="category" class="form-select">
+                                    <option value="">Choose a category</option>
+                                    <option>Luxury Stays</option>
+                                    <option>Exclusive Events</option>
+                                    <option>Private Travel</option>
+                                    <option>Vetted Staff</option>
+                                    <option>Experiences</option>
+                                    <option>Vacations</option>
+                                </select>
+                                <p id="categoryHint" class="text-danger small"></p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="item" class="form-label">Item name</label>
+                                <select id="item" name="item" class="form-select">
+                                    <option value="">Choose a category first</option>
+                                </select>
+                                <p id="itemHint" class="text-danger small"></p>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend class="h4">Dates and guests</legend>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="start" class="form-label">Start date</label>
+                                    <input id="start" name="start" class="form-control" type="date">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="end" class="form-label">End date</label>
+                                    <input id="end" name="end" class="form-control" type="date">
+                                </div>
+                            </div>
+                            <p id="dateHint" class="text-danger small"></p>
+                            <div class="mb-3">
+                                <label for="guests" class="form-label">Guests</label>
+                                <input id="guests" name="guests" class="form-control" type="number">
+                                <p id="guestsTip" class="form-text"></p>
+                                <p id="guestsHint" class="text-danger small"></p>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend class="h4">Add-ons</legend>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="flights" name="flights">
+                                <label class="form-check-label" for="flights">Flights</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="chauffeur" name="chauffeur">
+                                <label class="form-check-label" for="chauffeur">Chauffeur</label>
+                            </div>
+                            <div class="mb-3 mt-2" id="pickupSection">
+                                <label for="pickup" class="form-label">Pickup address</label>
+                                <input id="pickup" name="pickup" class="form-control" type="text" placeholder="Hotel, villa or airport">
+                                <p id="pickupHint" class="text-danger small"></p>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="chef" name="chef">
+                                <label class="form-check-label" for="chef">Private Chef</label>
+                            </div>
+                        </fieldset>
+                        <div class="mb-3">
+                            <label for="requests" class="form-label">Special Requests</label>
+                            <textarea id="requests" name="requests" class="form-control" rows="4"></textarea>
+                            <p id="requestsHint" class="text-danger small"></p>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-gold fw-bold" type="submit">Submit Request</button>
+                            <button class="btn btn-outline-secondary" type="reset">Reset Form</button>
+                        </div>
+                        <p id="formMsg" class="text-center text-success mt-3"></p>
+                    </form>
+                </div>
+            </section>
+
+            <section id="myBookings">
+                <div class="d-flex justify-content-between align-items-center mt-5 mb-3">
+                    <h2 class="fw-bold mb-0">My Bookings</h2>
+                    <button type="button" class="btn btn-outline-secondary btn-sm" id="clearBookings">Clear All Bookings</button>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Item</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Dates</th>
+                                <th scope="col">Guests</th>
+                                <th scope="col">Add-ons</th>
+                                <th scope="col">Special Requests</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bookingList">
+                            <tr>
+                                <td colspan="6">You have no bookings yet.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <section class="mt-4">
+                <div class="row text-center d-flex justify-content-center pt-3">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="catalogue.html">Catalogue</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="cart.html">Cart</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="booking.html">My Bookings</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="contact.html">Contact</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="login.html">Login</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="register.html">Register</a></h6>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="my-4">
+
+            <section class="mb-4">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>Velour is an on-demand luxury services platform: stays, exclusive events, private travel, vetted staff, experiences and vacations, booked in minutes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <p>&copy; 2026 Velour. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="booking.js"></script>
+</body>
+</html>

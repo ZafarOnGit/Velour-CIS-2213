@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete luxury trips with flights, hotels, transfers and activities in one booking.">
+    <title>Velour | Vacations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="index.html">VELOUR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown" id="catalogueMenu">
+                            <a class="nav-link dropdown-toggle active" href="catalogue.html" id="catalogueDropdown">Catalogue</a>
+                            <ul class="dropdown-menu" id="catalogueList" aria-labelledby="catalogueDropdown">
+                                <li><a class="dropdown-item" href="stays.html">Luxury Stays</a></li>
+                                <li><a class="dropdown-item" href="events.html">Exclusive Events</a></li>
+                                <li><a class="dropdown-item" href="travel.html">Private Travel</a></li>
+                                <li><a class="dropdown-item" href="vetted-staff.html">Vetted Staff</a></li>
+                                <li><a class="dropdown-item" href="experiences.html">Experiences</a></li>
+                                <li><a class="dropdown-item" href="vacations.html">Vacations</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="booking.html">My Bookings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid px-0">
+        <div class="container my-5">
+            <header class="page-header mb-4">
+                <h1 class="text-center fw-bold mb-2 page-title">Vacations</h1>
+                <p class="text-center lead mb-4">Complete trips with flights, hotels, transfers and activities booked together, so you get one price and one point of contact.</p>
+            </header>
+            <div class="filter-bar mb-4">
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" id="filterAll" value="all">All</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="signature">Signature Packages</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="islands">Island Escapes</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="city">City Breaks</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="nature">Adventure and Nature</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="seasonal">Seasonal</button>
+            </div>
+            <div class="sort-bar mb-4" id="sortBar">
+                <label for="sortBy" class="me-2">Sort by</label>
+                <select id="sortBy" class="form-select d-inline-block w-auto">
+                    <option value="relevance">Relevance</option>
+                    <option value="price-low">Price: low to high</option>
+                    <option value="price-high">Price: high to low</option>
+                    <option value="name-az">Name: A to Z</option>
+                    <option value="name-za">Name: Z to A</option>
+                </select>
+            </div>
+
+            <section class="category-section" id="signature">
+                <h2 class="fw-bold mt-5 mb-3">Signature Packages</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 item signature">
+                        <div class="card h-100 hover-card">
+                            <a href="products/abu-dhabi-gp-weekend.html"><img src="assets/abu dhabi f1.jpeg" class="card-img-top img-fluid" alt="Abu Dhabi GP Weekend"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/abu-dhabi-gp-weekend.html">Abu Dhabi GP Weekend</a></h5>
+                                <p class="card-info">Abu Dhabi, UAE &middot; 4 nights</p>
+                                <p class="card-text">Four nights on Saadiyat, three days in the Paddock Club and a yacht party at Yas Marina on Saturday night.</p>
+                                <p class="card-info">Includes: Flights, villa, Paddock Club passes, chauffeur</p>
+                                <p class="price">From $6,500 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Abu Dhabi GP Weekend" value="6500">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item signature">
+                        <div class="card h-100 hover-card">
+                            <a href="products/monaco-gp-week.html"><img src="assets/monaco gp.jpeg" class="card-img-top img-fluid" alt="Monaco GP Week"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/monaco-gp-week.html">Monaco GP Week</a></h5>
+                                <p class="card-info">Monaco &middot; 5 nights</p>
+                                <p class="card-text">Stay above the harbour, watch qualifying and the race from a yacht terrace, then dinner at H&ocirc;tel de Paris.</p>
+                                <p class="card-info">Includes: Flights, penthouse, race tickets, dinner</p>
+                                <p class="price">From $9,500 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Monaco GP Week" value="9500">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item signature">
+                        <div class="card h-100 hover-card">
+                            <a href="products/champions-league-final-trip.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Champions League Final Trip"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/champions-league-final-trip.html">Champions League Final Trip</a></h5>
+                                <p class="card-info">Host city &middot; 3 nights</p>
+                                <p class="card-text">Arrive two days early to see the city, then the final. Tickets are confirmed before you pay.</p>
+                                <p class="card-info">Includes: Flights, hotel, match tickets, transfers</p>
+                                <p class="price">From $5,800 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Champions League Final Trip" value="5800">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section" id="islands">
+                <h2 class="fw-bold mt-5 mb-3">Island Escapes</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 item islands">
+                        <div class="card h-100 hover-card">
+                            <a href="products/maldives-7-nights.html"><img src="assets/maldives-waterview.jpeg" class="card-img-top img-fluid" alt="Maldives, 7 Nights"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/maldives-7-nights.html">Maldives, 7 Nights</a></h5>
+                                <p class="card-info">Maldives &middot; 7 nights</p>
+                                <p class="card-text">A seaplane from Mal&eacute;, an overwater villa and one dive or snorkel trip every day.</p>
+                                <p class="card-info">Includes: Flights, seaplane, villa, all meals</p>
+                                <p class="price">From $7,200 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Maldives, 7 Nights" value="7200">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item islands">
+                        <div class="card h-100 hover-card">
+                            <a href="products/seychelles-island-hopping.html"><img src="assets/ship.jpeg" class="card-img-top img-fluid" alt="Seychelles Island Hopping"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/seychelles-island-hopping.html">Seychelles Island Hopping</a></h5>
+                                <p class="card-info">Seychelles &middot; 8 nights</p>
+                                <p class="card-text">Mah&eacute;, Praslin and La Digue in eight nights, with a local guide on each island.</p>
+                                <p class="card-info">Includes: Flights, 3 hotels, boat transfers</p>
+                                <p class="price">From $6,800 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Seychelles Island Hopping" value="6800">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item islands">
+                        <div class="card h-100 hover-card">
+                            <a href="products/bora-bora-overwater-retreat.html"><img src="assets/tahiti bora bora.jpeg" class="card-img-top img-fluid" alt="Bora Bora Overwater Retreat"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/bora-bora-overwater-retreat.html">Bora Bora Overwater Retreat</a></h5>
+                                <p class="card-info">French Polynesia &middot; 7 nights</p>
+                                <p class="card-text">A lagoon bungalow facing Mount Otemanu, with breakfast and dinner every day.</p>
+                                <p class="card-info">Includes: Flights, bungalow, half board</p>
+                                <p class="price">From $8,500 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Bora Bora Overwater Retreat" value="8500">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section" id="city">
+                <h2 class="fw-bold mt-5 mb-3">City Breaks</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 item city">
+                        <div class="card h-100 hover-card">
+                            <a href="products/paris-fashion-weekend.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Paris Fashion Weekend"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/paris-fashion-weekend.html">Paris Fashion Weekend</a></h5>
+                                <p class="card-info">Paris, France &middot; 4 nights</p>
+                                <p class="card-text">Two runway shows, a private shopping appointment on Avenue Montaigne and dinner in Saint-Germain.</p>
+                                <p class="card-info">Includes: Flights, hotel, show tickets, chauffeur</p>
+                                <p class="price">From $5,200 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Paris Fashion Weekend" value="5200">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item city">
+                        <div class="card h-100 hover-card">
+                            <a href="products/royal-london.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Royal London"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/royal-london.html">Royal London</a></h5>
+                                <p class="card-info">London, UK &middot; 4 nights</p>
+                                <p class="card-text">A Buckingham Palace tour, afternoon tea at the Ritz and a West End show.</p>
+                                <p class="card-info">Includes: Flights, Mayfair hotel, tours, chauffeur</p>
+                                <p class="price">From $4,800 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Royal London" value="4800">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item city">
+                        <div class="card h-100 hover-card">
+                            <a href="products/tokyo-and-kyoto.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Tokyo and Kyoto"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/tokyo-and-kyoto.html">Tokyo and Kyoto</a></h5>
+                                <p class="card-info">Japan &middot; 7 nights</p>
+                                <p class="card-text">Five nights in Tokyo, then the bullet train to Kyoto for two, with a guide in both cities.</p>
+                                <p class="card-info">Includes: Flights, 2 hotels, rail pass, guide</p>
+                                <p class="price">From $6,400 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Tokyo and Kyoto" value="6400">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section" id="nature">
+                <h2 class="fw-bold mt-5 mb-3">Adventure and Nature</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 item nature">
+                        <div class="card h-100 hover-card">
+                            <a href="products/kenya-safari.html"><img src="assets/villa.jpeg" class="card-img-top img-fluid" alt="Kenya Safari"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/kenya-safari.html">Kenya Safari</a></h5>
+                                <p class="card-info">Kenya &middot; 8 nights</p>
+                                <p class="card-text">The Masai Mara during the migration, then four nights in Amboseli under Kilimanjaro. Best from July to October.</p>
+                                <p class="card-info">Includes: Flights, 2 lodges, game drives, bush flights</p>
+                                <p class="price">From $7,900 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Kenya Safari" value="7900">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item nature">
+                        <div class="card h-100 hover-card">
+                            <a href="products/lapland-glass-igloo.html"><img src="assets/villa.jpeg" class="card-img-top img-fluid" alt="Lapland Glass Igloo"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/lapland-glass-igloo.html">Lapland Glass Igloo</a></h5>
+                                <p class="card-info">Finland &middot; 5 nights</p>
+                                <p class="card-text">Sleep under the Northern Lights, ride with huskies and visit a reindeer farm. Best from December to March.</p>
+                                <p class="card-info">Includes: Flights, glass igloo, husky ride, snowmobile tour</p>
+                                <p class="price">From $5,600 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Lapland Glass Igloo" value="5600">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item nature">
+                        <div class="card h-100 hover-card">
+                            <a href="products/patagonia-expedition.html"><img src="assets/villa.jpeg" class="card-img-top img-fluid" alt="Patagonia Expedition"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/patagonia-expedition.html">Patagonia Expedition</a></h5>
+                                <p class="card-info">Chile and Argentina &middot; 10 nights</p>
+                                <p class="card-text">Hike Torres del Paine, then cross into Argentina to see the Perito Moreno glacier.</p>
+                                <p class="card-info">Includes: Flights, 2 lodges, guided hikes</p>
+                                <p class="price">From $9,200 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Patagonia Expedition" value="9200">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section" id="seasonal">
+                <h2 class="fw-bold mt-5 mb-3">Seasonal</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 item seasonal">
+                        <div class="card h-100 hover-card">
+                            <a href="products/new-years-eve-in-dubai.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="New Year's Eve in Dubai"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/new-years-eve-in-dubai.html">New Year's Eve in Dubai</a></h5>
+                                <p class="card-info">Dubai, UAE &middot; 5 nights</p>
+                                <p class="card-text">Watch the Burj Khalifa fireworks from your own terrace, then a beach brunch on New Year's Day.</p>
+                                <p class="card-info">Includes: Flights, penthouse, brunch, chauffeur</p>
+                                <p class="price">From $6,700 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="New Year's Eve in Dubai" value="6700">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item seasonal">
+                        <div class="card h-100 hover-card">
+                            <a href="products/christmas-in-the-alps.html"><img src="assets/villa.jpeg" class="card-img-top img-fluid" alt="Christmas in the Alps"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/christmas-in-the-alps.html">Christmas in the Alps</a></h5>
+                                <p class="card-info">Zermatt, Switzerland &middot; 7 nights</p>
+                                <p class="card-text">A ski chalet with a chef who cooks Christmas dinner, and lift passes for the week.</p>
+                                <p class="card-info">Includes: Flights, chalet, chef, ski passes</p>
+                                <p class="price">From $8,100 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Christmas in the Alps" value="8100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item seasonal">
+                        <div class="card h-100 hover-card">
+                            <a href="products/mediterranean-yacht-summer.html"><img src="assets/AdobeStock_237379942.jpeg" class="card-img-top img-fluid" alt="Mediterranean Yacht Summer"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/mediterranean-yacht-summer.html">Mediterranean Yacht Summer</a></h5>
+                                <p class="card-info">Spain &middot; 10 nights</p>
+                                <p class="card-text">Sail from Mallorca to Ibiza and Formentera, stopping wherever you like on the way.</p>
+                                <p class="card-info">Includes: Flights, crewed yacht, all meals</p>
+                                <p class="price">From $12,000 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Mediterranean Yacht Summer" value="12000">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sortedSection">
+                <div class="row g-4" id="sortedRow">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <section class="mt-4">
+                <div class="row text-center d-flex justify-content-center pt-3">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="catalogue.html">Catalogue</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="cart.html">Cart</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="booking.html">My Bookings</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="contact.html">Contact</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="login.html">Login</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="register.html">Register</a></h6>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="my-4">
+
+            <section class="mb-4">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>Velour is an on-demand luxury services platform: stays, exclusive events, private travel, vetted staff, experiences and vacations, booked in minutes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <p>&copy; 2026 Velour. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="sort.js"></script>
+</body>
+</html>

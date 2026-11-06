@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desert safaris, chef's tables, spa days and private tours, bookable for a few hours or a day.">
+    <title>Velour | Experiences</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="index.html">VELOUR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown" id="catalogueMenu">
+                            <a class="nav-link dropdown-toggle active" href="catalogue.html" id="catalogueDropdown">Catalogue</a>
+                            <ul class="dropdown-menu" id="catalogueList" aria-labelledby="catalogueDropdown">
+                                <li><a class="dropdown-item" href="stays.html">Luxury Stays</a></li>
+                                <li><a class="dropdown-item" href="events.html">Exclusive Events</a></li>
+                                <li><a class="dropdown-item" href="travel.html">Private Travel</a></li>
+                                <li><a class="dropdown-item" href="vetted-staff.html">Vetted Staff</a></li>
+                                <li><a class="dropdown-item" href="experiences.html">Experiences</a></li>
+                                <li><a class="dropdown-item" href="vacations.html">Vacations</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="booking.html">My Bookings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid px-0">
+        <div class="container my-5">
+            <header class="page-header mb-4">
+                <h1 class="text-center fw-bold mb-2 page-title">Experiences</h1>
+                <p class="text-center lead mb-4">Things to do for a few hours or a whole day, wherever you are staying.</p>
+            </header>
+            <div class="filter-bar mb-4">
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" id="filterAll" value="all">All</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="adventure">Adventure</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="dining">Dining</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="wellness">Wellness</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="learning">Culture and Learning</button>
+            </div>
+            <div class="sort-bar mb-4" id="sortBar">
+                <label for="sortBy" class="me-2">Sort by</label>
+                <select id="sortBy" class="form-select d-inline-block w-auto">
+                    <option value="relevance">Relevance</option>
+                    <option value="price-low">Price: low to high</option>
+                    <option value="price-high">Price: high to low</option>
+                    <option value="name-az">Name: A to Z</option>
+                    <option value="name-za">Name: Z to A</option>
+                </select>
+            </div>
+
+            <section class="category-section" id="adventure">
+                <h2 class="fw-bold mt-5 mb-3">Adventure</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 item adventure">
+                        <div class="card h-100 hover-card">
+                            <a href="products/desert-safari-with-falconry.html"><img src="assets/desert safari.jpeg" class="card-img-top img-fluid" alt="Desert Safari with Falconry"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/desert-safari-with-falconry.html">Desert Safari with Falconry</a></h5>
+                                <p class="card-info">Dubai &middot; full day &middot; 2-6 guests</p>
+                                <p class="card-text">Dune driving in the morning, a falconry display at midday and dinner at a private camp.</p>
+                                <p class="price">$450 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Desert Safari with Falconry" value="450">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item adventure">
+                        <div class="card h-100 hover-card">
+                            <a href="products/hot-air-balloon-at-sunrise.html"><img src="assets/villa.jpeg" class="card-img-top img-fluid" alt="Hot-Air Balloon at Sunrise"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/hot-air-balloon-at-sunrise.html">Hot-Air Balloon at Sunrise</a></h5>
+                                <p class="card-info">Dubai desert &middot; 4 hours &middot; 2-8 guests</p>
+                                <p class="card-text">Lift off before dawn and drift over the dunes for an hour, with breakfast after landing.</p>
+                                <p class="price">$350 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Hot-Air Balloon at Sunrise" value="350">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item adventure">
+                        <div class="card h-100 hover-card">
+                            <a href="products/skydive-over-the-palm.html"><img src="assets/privateplane.jpeg" class="card-img-top img-fluid" alt="Skydive over the Palm"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/skydive-over-the-palm.html">Skydive over the Palm</a></h5>
+                                <p class="card-info">Dubai &middot; 3 hours &middot; 1-2 guests</p>
+                                <p class="card-text">A tandem jump from 13,000 ft with Palm Jumeirah below you.</p>
+                                <p class="price">$650 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Skydive over the Palm" value="650">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item adventure">
+                        <div class="card h-100 hover-card">
+                            <a href="products/cage-free-shark-dive.html"><img src="assets/ship.jpeg" class="card-img-top img-fluid" alt="Cage-Free Shark Dive"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/cage-free-shark-dive.html">Cage-Free Shark Dive</a></h5>
+                                <p class="card-info">Aliwal Shoal, South Africa &middot; full day &middot; 1-4 divers</p>
+                                <p class="card-text">Dive with blacktip and tiger sharks next to a marine biologist. An Open Water certificate is needed.</p>
+                                <p class="price">$900 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Cage-Free Shark Dive" value="900">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section" id="dining">
+                <h2 class="fw-bold mt-5 mb-3">Dining</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 item dining">
+                        <div class="card h-100 hover-card">
+                            <a href="products/michelin-chefs-table.html"><img src="assets/chef.jpeg" class="card-img-top img-fluid" alt="Michelin Chef's Table"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/michelin-chefs-table.html">Michelin Chef's Table</a></h5>
+                                <p class="card-info">Dubai &middot; 3 hours &middot; 2-8 guests</p>
+                                <p class="card-text">Twelve courses served at the kitchen counter, with the head chef explaining each one.</p>
+                                <p class="price">$550 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Michelin Chef's Table" value="550">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item dining">
+                        <div class="card h-100 hover-card">
+                            <a href="products/dinner-in-the-dunes.html"><img src="assets/villa.jpeg" class="card-img-top img-fluid" alt="Dinner in the Dunes"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/dinner-in-the-dunes.html">Dinner in the Dunes</a></h5>
+                                <p class="card-info">Dubai desert &middot; 4 hours &middot; 2-10 guests</p>
+                                <p class="card-text">A long table on the sand lit by lanterns, with a grill chef and an oud player.</p>
+                                <p class="price">$300 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Dinner in the Dunes" value="300">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item dining">
+                        <div class="card h-100 hover-card">
+                            <a href="products/restaurant-buyout.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Restaurant Buyout"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/restaurant-buyout.html">Restaurant Buyout</a></h5>
+                                <p class="card-info">Any city &middot; one evening &middot; 10-40 guests</p>
+                                <p class="card-text">Close a restaurant for the night for a birthday, a proposal or a company dinner.</p>
+                                <p class="price">Price on request</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="contact.html" class="btn btn-gold btn-sm w-100">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item dining">
+                        <div class="card h-100 hover-card">
+                            <a href="products/underwater-dining.html"><img src="assets/ship.jpeg" class="card-img-top img-fluid" alt="Underwater Dining"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/underwater-dining.html">Underwater Dining</a></h5>
+                                <p class="card-info">Maldives &middot; 3 hours &middot; 2-6 guests</p>
+                                <p class="card-text">Lunch five metres below the surface, with reef fish swimming past the glass.</p>
+                                <p class="price">$750 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Underwater Dining" value="750">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section" id="wellness">
+                <h2 class="fw-bold mt-5 mb-3">Wellness</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 item wellness">
+                        <div class="card h-100 hover-card">
+                            <a href="products/in-villa-spa-day.html"><img src="assets/villa.jpeg" class="card-img-top img-fluid" alt="In-Villa Spa Day"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/in-villa-spa-day.html">In-Villa Spa Day</a></h5>
+                                <p class="card-info">Your villa &middot; full day &middot; 1-6 guests</p>
+                                <p class="card-text">Two therapists bring tables, oils and towels and turn a room of your villa into a spa.</p>
+                                <p class="price">$650 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="In-Villa Spa Day" value="650">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item wellness">
+                        <div class="card h-100 hover-card">
+                            <a href="products/yoga-and-sound-healing.html"><img src="assets/villa.jpeg" class="card-img-top img-fluid" alt="Yoga and Sound Healing"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/yoga-and-sound-healing.html">Yoga and Sound Healing</a></h5>
+                                <p class="card-info">Your villa or a beach &middot; 2 hours &middot; 1-10 guests</p>
+                                <p class="card-text">A gentle yoga class followed by thirty minutes of singing bowls.</p>
+                                <p class="price">$180 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Yoga and Sound Healing" value="180">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item wellness">
+                        <div class="card h-100 hover-card">
+                            <a href="products/royal-hammam.html"><img src="assets/villa.jpeg" class="card-img-top img-fluid" alt="Royal Hammam"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/royal-hammam.html">Royal Hammam</a></h5>
+                                <p class="card-info">Dubai &middot; 3 hours &middot; 1-4 guests</p>
+                                <p class="card-text">Steam, a black soap scrub, a clay mask and a massage in a private marble hammam.</p>
+                                <p class="price">$300 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Royal Hammam" value="300">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item wellness">
+                        <div class="card h-100 hover-card">
+                            <a href="products/sleep-and-recovery-retreat.html"><img src="assets/villa.jpeg" class="card-img-top img-fluid" alt="Sleep and Recovery Retreat"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/sleep-and-recovery-retreat.html">Sleep and Recovery Retreat</a></h5>
+                                <p class="card-info">Switzerland &middot; 2 days &middot; 1-4 guests</p>
+                                <p class="card-text">A sleep test, cold plunge, infrared sauna and a doctor's plan to take home.</p>
+                                <p class="price">$1,200 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Sleep and Recovery Retreat" value="1200">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section" id="learning">
+                <h2 class="fw-bold mt-5 mb-3">Culture and Learning</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 item learning">
+                        <div class="card h-100 hover-card">
+                            <a href="products/after-hours-museum-tour.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="After-Hours Museum Tour"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/after-hours-museum-tour.html">After-Hours Museum Tour</a></h5>
+                                <p class="card-info">Louvre Abu Dhabi &middot; 2 hours &middot; 2-8 guests</p>
+                                <p class="card-text">Walk the galleries after closing time with a curator and no crowds.</p>
+                                <p class="price">$250 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="After-Hours Museum Tour" value="250">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item learning">
+                        <div class="card h-100 hover-card">
+                            <a href="products/cooking-masterclass.html"><img src="assets/chef.jpeg" class="card-img-top img-fluid" alt="Cooking Masterclass"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/cooking-masterclass.html">Cooking Masterclass</a></h5>
+                                <p class="card-info">Your villa &middot; 4 hours &middot; 2-8 guests</p>
+                                <p class="card-text">One of our Elite chefs teaches you three dishes, then you eat what you made.</p>
+                                <p class="price">$400 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Cooking Masterclass" value="400">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item learning">
+                        <div class="card h-100 hover-card">
+                            <a href="products/watchmaking-workshop.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Watchmaking Workshop"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/watchmaking-workshop.html">Watchmaking Workshop</a></h5>
+                                <p class="card-info">Geneva, Switzerland &middot; full day &middot; 2-6 guests</p>
+                                <p class="card-text">Take apart and rebuild a mechanical watch movement at a watchmaker's bench.</p>
+                                <p class="price">$950 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Watchmaking Workshop" value="950">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item learning">
+                        <div class="card h-100 hover-card">
+                            <a href="products/perfume-creation.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Perfume Creation"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/perfume-creation.html">Perfume Creation</a></h5>
+                                <p class="card-info">Paris, France &middot; 3 hours &middot; 1-6 guests</p>
+                                <p class="card-text">Mix your own scent with a perfumer and take home a 50 ml bottle.</p>
+                                <p class="price">$350 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Perfume Creation" value="350">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sortedSection">
+                <div class="row g-4" id="sortedRow">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <section class="mt-4">
+                <div class="row text-center d-flex justify-content-center pt-3">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="catalogue.html">Catalogue</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="cart.html">Cart</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="booking.html">My Bookings</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="contact.html">Contact</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="login.html">Login</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="register.html">Register</a></h6>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="my-4">
+
+            <section class="mb-4">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>Velour is an on-demand luxury services platform: stays, exclusive events, private travel, vetted staff, experiences and vacations, booked in minutes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <p>&copy; 2026 Velour. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="sort.js"></script>
+</body>
+</html>

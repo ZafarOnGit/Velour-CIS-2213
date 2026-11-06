@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hospitality packages for Formula 1, football, tennis, fashion week and film festivals.">
+    <title>Velour | Exclusive Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="index.html">VELOUR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown" id="catalogueMenu">
+                            <a class="nav-link dropdown-toggle active" href="catalogue.html" id="catalogueDropdown">Catalogue</a>
+                            <ul class="dropdown-menu" id="catalogueList" aria-labelledby="catalogueDropdown">
+                                <li><a class="dropdown-item" href="stays.html">Luxury Stays</a></li>
+                                <li><a class="dropdown-item" href="events.html">Exclusive Events</a></li>
+                                <li><a class="dropdown-item" href="travel.html">Private Travel</a></li>
+                                <li><a class="dropdown-item" href="vetted-staff.html">Vetted Staff</a></li>
+                                <li><a class="dropdown-item" href="experiences.html">Experiences</a></li>
+                                <li><a class="dropdown-item" href="vacations.html">Vacations</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="booking.html">My Bookings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid px-0">
+        <div class="container my-5">
+            <header class="page-header mb-4">
+                <h1 class="text-center fw-bold mb-2 page-title">Exclusive Events</h1>
+                <p class="text-center lead mb-4">Hospitality tickets for the races, matches and shows people plan their year around. Return flights and a chauffeur can be added to any event when you book.</p>
+            </header>
+            <div class="filter-bar mb-4">
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" id="filterAll" value="all">All</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="motorsport">Motorsport</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="football">Football</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="sports">Other Sports</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm filter-btn" value="culture">Culture and Fashion</button>
+            </div>
+            <div class="sort-bar mb-4" id="sortBar">
+                <label for="sortBy" class="me-2">Sort by</label>
+                <select id="sortBy" class="form-select d-inline-block w-auto">
+                    <option value="relevance">Relevance</option>
+                    <option value="price-low">Price: low to high</option>
+                    <option value="price-high">Price: high to low</option>
+                    <option value="name-az">Name: A to Z</option>
+                    <option value="name-za">Name: Z to A</option>
+                </select>
+            </div>
+
+            <section class="category-section" id="motorsport">
+                <h2 class="fw-bold mt-5 mb-3">Motorsport</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 item motorsport">
+                        <div class="card h-100 hover-card">
+                            <a href="products/abu-dhabi-grand-prix-paddock-club.html"><img src="assets/abu dhabi f1.jpeg" class="card-img-top img-fluid" alt="Abu Dhabi Grand Prix, Paddock Club"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/abu-dhabi-grand-prix-paddock-club.html">Abu Dhabi Grand Prix, Paddock Club</a></h5>
+                                <p class="card-info">Yas Marina Circuit &middot; season finale &middot; 3-day pass</p>
+                                <p class="card-text">Pit lane walks, food and drinks all day, and a terrace above the start-finish straight.</p>
+                                <p class="price">$2,000 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Abu Dhabi Grand Prix, Paddock Club" value="2000">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item motorsport">
+                        <div class="card h-100 hover-card">
+                            <a href="products/monaco-grand-prix-yacht-terrace.html"><img src="assets/monaco gp.jpeg" class="card-img-top img-fluid" alt="Monaco Grand Prix, Yacht Terrace"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/monaco-grand-prix-yacht-terrace.html">Monaco Grand Prix, Yacht Terrace</a></h5>
+                                <p class="card-info">Port Hercule, Monaco &middot; race weekend &middot; 2-8 guests</p>
+                                <p class="card-text">Watch from the deck of a yacht moored beside the swimming pool chicane.</p>
+                                <p class="price">$3,500 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Monaco Grand Prix, Yacht Terrace" value="3500">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item motorsport">
+                        <div class="card h-100 hover-card">
+                            <a href="products/private-track-day.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Private Track Day"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/private-track-day.html">Private Track Day</a></h5>
+                                <p class="card-info">Yas Marina Circuit &middot; any weekday &middot; 2-8 drivers</p>
+                                <p class="card-text">The whole circuit for one day, two supercars, a race instructor and timed laps.</p>
+                                <p class="price">$8,000 / group</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Private Track Day" value="8000">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item motorsport">
+                        <div class="card h-100 hover-card">
+                            <a href="products/supercar-driving-experience.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Supercar Driving Experience"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/supercar-driving-experience.html">Supercar Driving Experience</a></h5>
+                                <p class="card-info">Dubai Autodrome &middot; any day &middot; 1-4 drivers</p>
+                                <p class="card-text">Ten laps each in a Ferrari and a Lamborghini, then a passenger lap with a racing driver.</p>
+                                <p class="price">$1,200 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Supercar Driving Experience" value="1200">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section" id="football">
+                <h2 class="fw-bold mt-5 mb-3">Football</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 item football">
+                        <div class="card h-100 hover-card">
+                            <a href="products/manchester-city-hospitality-box.html"><img src="assets/mac city football statdium.jpeg" class="card-img-top img-fluid" alt="Manchester City, Hospitality Box"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/manchester-city-hospitality-box.html">Manchester City, Hospitality Box</a></h5>
+                                <p class="card-info">Etihad Stadium &middot; Premier League &middot; 2-10 guests</p>
+                                <p class="card-text">A private box near the halfway line, with a three-course lunch before kick-off.</p>
+                                <p class="price">$850 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Manchester City, Hospitality Box" value="850">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item football">
+                        <div class="card h-100 hover-card">
+                            <a href="products/chelsea-stamford-bridge.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Chelsea, Stamford Bridge"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/chelsea-stamford-bridge.html">Chelsea, Stamford Bridge</a></h5>
+                                <p class="card-info">London, UK &middot; Premier League &middot; 2-8 guests</p>
+                                <p class="card-text">Padded seats in the West Stand and a pre-match meal in the club restaurant.</p>
+                                <p class="price">$750 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Chelsea, Stamford Bridge" value="750">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item football">
+                        <div class="card h-100 hover-card">
+                            <a href="products/real-madrid-santiago-bernabeu.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Real Madrid, Santiago Bernab&eacute;u"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/real-madrid-santiago-bernabeu.html">Real Madrid, Santiago Bernab&eacute;u</a></h5>
+                                <p class="card-info">Madrid, Spain &middot; LaLiga &middot; 2-8 guests</p>
+                                <p class="card-text">VIP seats, plus a stadium tour on the morning of the game.</p>
+                                <p class="price">$900 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Real Madrid, Santiago Bernab&eacute;u" value="900">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 item football">
+                        <div class="card h-100 hover-card">
+                            <a href="products/champions-league-final.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Champions League Final"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/champions-league-final.html">Champions League Final</a></h5>
+                                <p class="card-info">Host city changes yearly &middot; end of season &middot; 2-8 guests</p>
+                                <p class="card-text">Match tickets, hotel and transfers for the biggest club game of the year.</p>
+                                <p class="price">Price on request</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="contact.html" class="btn btn-gold btn-sm w-100">Enquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section" id="sports">
+                <h2 class="fw-bold mt-5 mb-3">Other Sports</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 item sports">
+                        <div class="card h-100 hover-card">
+                            <a href="products/wimbledon-centre-court.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Wimbledon, Centre Court"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/wimbledon-centre-court.html">Wimbledon, Centre Court</a></h5>
+                                <p class="card-info">London, UK &middot; late June to July &middot; 2-6 guests</p>
+                                <p class="card-text">Debenture seats with lounge access between matches.</p>
+                                <p class="price">$1,100 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Wimbledon, Centre Court" value="1100">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item sports">
+                        <div class="card h-100 hover-card">
+                            <a href="products/dubai-world-cup.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Dubai World Cup"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/dubai-world-cup.html">Dubai World Cup</a></h5>
+                                <p class="card-info">Meydan Racecourse &middot; March or April &middot; 2-8 guests</p>
+                                <p class="card-text">A table in the hospitality suite on the richest night in horse racing.</p>
+                                <p class="price">$650 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Dubai World Cup" value="650">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item sports">
+                        <div class="card h-100 hover-card">
+                            <a href="products/pro-am-golf-day.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Pro-Am Golf Day"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/pro-am-golf-day.html">Pro-Am Golf Day</a></h5>
+                                <p class="card-info">Emirates Golf Club, Dubai &middot; October to April &middot; 2-4 players</p>
+                                <p class="card-text">Play 18 holes with a touring professional, followed by lunch in the clubhouse.</p>
+                                <p class="price">$900 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Pro-Am Golf Day" value="900">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section" id="culture">
+                <h2 class="fw-bold mt-5 mb-3">Culture and Fashion</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 item culture">
+                        <div class="card h-100 hover-card">
+                            <a href="products/paris-fashion-week.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Paris Fashion Week"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/paris-fashion-week.html">Paris Fashion Week</a></h5>
+                                <p class="card-info">Paris, France &middot; March and September &middot; 2-6 guests</p>
+                                <p class="card-text">Seats at three runway shows and an invitation to one after-party.</p>
+                                <p class="price">$2,500 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Paris Fashion Week" value="2500">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item culture">
+                        <div class="card h-100 hover-card">
+                            <a href="products/cannes-film-festival.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Cannes Film Festival"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/cannes-film-festival.html">Cannes Film Festival</a></h5>
+                                <p class="card-info">Cannes, France &middot; May &middot; 2-6 guests</p>
+                                <p class="card-text">Tickets to a red-carpet premiere and a day at a beach club on La Croisette.</p>
+                                <p class="price">$2,200 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Cannes Film Festival" value="2200">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 item culture">
+                        <div class="card h-100 hover-card">
+                            <a href="products/art-basel-miami-beach.html"><img src="assets/event.jpg" class="card-img-top img-fluid" alt="Art Basel Miami Beach"></a>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"><a href="products/art-basel-miami-beach.html">Art Basel Miami Beach</a></h5>
+                                <p class="card-info">Miami, USA &middot; December &middot; 2-8 guests</p>
+                                <p class="card-text">Entry on the VIP preview day, before the fair opens to the public.</p>
+                                <p class="price">$1,500 / person</p>
+                            </div>
+                            <div class="card-footer">
+                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Art Basel Miami Beach" value="1500">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sortedSection">
+                <div class="row g-4" id="sortedRow">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <section class="mt-4">
+                <div class="row text-center d-flex justify-content-center pt-3">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="catalogue.html">Catalogue</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="cart.html">Cart</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="booking.html">My Bookings</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="contact.html">Contact</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="login.html">Login</a></h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase fw-bold"><a href="register.html">Register</a></h6>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="my-4">
+
+            <section class="mb-4">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>Velour is an on-demand luxury services platform: stays, exclusive events, private travel, vetted staff, experiences and vacations, booked in minutes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <p>&copy; 2026 Velour. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="sort.js"></script>
+</body>
+</html>
