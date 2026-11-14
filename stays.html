@@ -6,7 +6,7 @@
     <meta name="description" content="Private villas, penthouses, chalets and islands, inspected by the Velour team.">
     <title>Velour | Luxury Stays</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -29,9 +29,9 @@
                                 <li><a class="dropdown-item" href="vacations.html">Vacations</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
-                        <li class="nav-item"><a class="nav-link" href="booking.html">My Bookings</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/cart">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/booking">My Bookings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/account">My Account</a></li>
                     </ul>
                 </div>
             </div>
@@ -77,7 +77,7 @@
                                 <p class="price">AED 16,500 / night</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Palm Jumeirah Signature Villa" value="16500">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Palm Jumeirah Signature Villa"><button type="submit" class="btn btn-gold btn-sm w-100" value="16500">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                                 <p class="price">AED 14,000 / night</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Saadiyat Beachfront Villa" value="14000">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Saadiyat Beachfront Villa"><button type="submit" class="btn btn-gold btn-sm w-100" value="14000">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -107,7 +107,7 @@
                                 <p class="price">AED 10,500 / night</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Maldives Overwater Villa" value="10500">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Maldives Overwater Villa"><button type="submit" class="btn btn-gold btn-sm w-100" value="10500">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
                                 <p class="price">AED 12,000 / night</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Downtown Dubai Sky Penthouse" value="12000">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Downtown Dubai Sky Penthouse"><button type="submit" class="btn btn-gold btn-sm w-100" value="12000">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                                 <p class="price">AED 15,000 / night</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Monaco Harbour Penthouse" value="15000">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Monaco Harbour Penthouse"><button type="submit" class="btn btn-gold btn-sm w-100" value="15000">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -157,7 +157,7 @@
                                 <p class="price">AED 13,000 / night</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Mayfair Penthouse" value="13000">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Mayfair Penthouse"><button type="submit" class="btn btn-gold btn-sm w-100" value="13000">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -192,7 +192,7 @@
                                 <p class="price">AED 24,000 / night</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Seychelles Island Estate" value="24000">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Seychelles Island Estate"><button type="submit" class="btn btn-gold btn-sm w-100" value="24000">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -207,7 +207,7 @@
                                 <p class="price">AED 17,500 / night</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Fiji Island Hideaway" value="17500">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Fiji Island Hideaway"><button type="submit" class="btn btn-gold btn-sm w-100" value="17500">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -227,7 +227,7 @@
                                 <p class="price">AED 9,500 / night</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Liwa Desert Palace" value="9500">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Liwa Desert Palace"><button type="submit" class="btn btn-gold btn-sm w-100" value="9500">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -242,7 +242,7 @@
                                 <p class="price">AED 6,600 / night</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Private Desert Camp" value="6600">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Private Desert Camp"><button type="submit" class="btn btn-gold btn-sm w-100" value="6600">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -257,7 +257,7 @@
                                 <p class="price">AED 8,100 / night</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="AlUla Canyon Villa" value="8100">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="AlUla Canyon Villa"><button type="submit" class="btn btn-gold btn-sm w-100" value="8100">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -277,7 +277,7 @@
                                 <p class="price">AED 19,000 / night</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Courchevel Ski Chalet" value="19000">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Courchevel Ski Chalet"><button type="submit" class="btn btn-gold btn-sm w-100" value="19000">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -292,7 +292,7 @@
                                 <p class="price">AED 16,000 / night</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Zermatt Alpine Lodge" value="16000">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Zermatt Alpine Lodge"><button type="submit" class="btn btn-gold btn-sm w-100" value="16000">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -307,7 +307,7 @@
                                 <p class="price">AED 14,500 / night</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Aspen Mountain Residence" value="14500">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Aspen Mountain Residence"><button type="submit" class="btn btn-gold btn-sm w-100" value="14500">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -327,7 +327,7 @@
                                 <p class="price">AED 12,000 / night</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Tuscan Vineyard Estate" value="12000">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Tuscan Vineyard Estate"><button type="submit" class="btn btn-gold btn-sm w-100" value="12000">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -342,7 +342,7 @@
                                 <p class="price">AED 9,900 / night</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Cotswolds Manor House" value="9900">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Cotswolds Manor House"><button type="submit" class="btn btn-gold btn-sm w-100" value="9900">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -357,7 +357,7 @@
                                 <p class="price">AED 7,700 / night</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Provence Farmhouse" value="7700">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Provence Farmhouse"><button type="submit" class="btn btn-gold btn-sm w-100" value="7700">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -379,10 +379,10 @@
                         <h6 class="text-uppercase fw-bold"><a href="catalogue.html">Catalogue</a></h6>
                     </div>
                     <div class="col-md-2">
-                        <h6 class="text-uppercase fw-bold"><a href="cart.html">Cart</a></h6>
+                        <h6 class="text-uppercase fw-bold"><a href="/cart">Cart</a></h6>
                     </div>
                     <div class="col-md-2">
-                        <h6 class="text-uppercase fw-bold"><a href="booking.html">My Bookings</a></h6>
+                        <h6 class="text-uppercase fw-bold"><a href="/booking">My Bookings</a></h6>
                     </div>
                     <div class="col-md-2">
                         <h6 class="text-uppercase fw-bold"><a href="contact.html">Contact</a></h6>
@@ -412,7 +412,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="main.js"></script>
-    <script src="sort.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sort.js"></script>
 </body>
 </html>

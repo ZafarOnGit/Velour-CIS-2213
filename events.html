@@ -6,7 +6,7 @@
     <meta name="description" content="Hospitality packages for Formula 1, football, tennis, fashion week and film festivals.">
     <title>Velour | Exclusive Events</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -29,9 +29,9 @@
                                 <li><a class="dropdown-item" href="vacations.html">Vacations</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
-                        <li class="nav-item"><a class="nav-link" href="booking.html">My Bookings</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/cart">Cart</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/booking">My Bookings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/account">My Account</a></li>
                     </ul>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                                 <p class="price">AED 7,300 / person</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Abu Dhabi Grand Prix, Paddock Club" value="7300">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Abu Dhabi Grand Prix, Paddock Club"><button type="submit" class="btn btn-gold btn-sm w-100" value="7300">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                                 <p class="price">AED 13,000 / person</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Monaco Grand Prix, Yacht Terrace" value="13000">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Monaco Grand Prix, Yacht Terrace"><button type="submit" class="btn btn-gold btn-sm w-100" value="13000">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                                 <p class="price">AED 29,500 / group</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Private Track Day" value="29500">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Private Track Day"><button type="submit" class="btn btn-gold btn-sm w-100" value="29500">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
                                 <p class="price">AED 4,400 / person</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Supercar Driving Experience" value="4400">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Supercar Driving Experience"><button type="submit" class="btn btn-gold btn-sm w-100" value="4400">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -140,7 +140,7 @@
                                 <p class="price">AED 3,100 / person</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Manchester City, Hospitality Box" value="3100">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Manchester City, Hospitality Box"><button type="submit" class="btn btn-gold btn-sm w-100" value="3100">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -155,7 +155,7 @@
                                 <p class="price">AED 2,800 / person</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Chelsea, Stamford Bridge" value="2800">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Chelsea, Stamford Bridge"><button type="submit" class="btn btn-gold btn-sm w-100" value="2800">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                                 <p class="price">AED 3,300 / person</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Real Madrid, Santiago Bernab&eacute;u" value="3300">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Real Madrid, Santiago Bernabeu"><button type="submit" class="btn btn-gold btn-sm w-100" value="3300">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -205,7 +205,7 @@
                                 <p class="price">AED 4,000 / person</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Wimbledon, Centre Court" value="4000">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Wimbledon, Centre Court"><button type="submit" class="btn btn-gold btn-sm w-100" value="4000">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -220,7 +220,7 @@
                                 <p class="price">AED 2,400 / person</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Dubai World Cup" value="2400">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Dubai World Cup"><button type="submit" class="btn btn-gold btn-sm w-100" value="2400">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -235,7 +235,7 @@
                                 <p class="price">AED 3,300 / person</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Pro-Am Golf Day" value="3300">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Pro-Am Golf Day"><button type="submit" class="btn btn-gold btn-sm w-100" value="3300">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -255,7 +255,7 @@
                                 <p class="price">AED 9,200 / person</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Paris Fashion Week" value="9200">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Paris Fashion Week"><button type="submit" class="btn btn-gold btn-sm w-100" value="9200">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -270,7 +270,7 @@
                                 <p class="price">AED 8,100 / person</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Cannes Film Festival" value="8100">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Cannes Film Festival"><button type="submit" class="btn btn-gold btn-sm w-100" value="8100">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -285,7 +285,7 @@
                                 <p class="price">AED 5,500 / person</p>
                             </div>
                             <div class="card-footer">
-                                <button type="button" class="btn btn-gold btn-sm w-100 add-btn" name="Art Basel Miami Beach" value="5500">Add to Cart</button>
+                                <form action="/cart/add" method="POST"><input type="hidden" name="item" value="Art Basel Miami Beach"><button type="submit" class="btn btn-gold btn-sm w-100" value="5500">Add to Cart</button></form>
                             </div>
                         </div>
                     </div>
@@ -307,10 +307,10 @@
                         <h6 class="text-uppercase fw-bold"><a href="catalogue.html">Catalogue</a></h6>
                     </div>
                     <div class="col-md-2">
-                        <h6 class="text-uppercase fw-bold"><a href="cart.html">Cart</a></h6>
+                        <h6 class="text-uppercase fw-bold"><a href="/cart">Cart</a></h6>
                     </div>
                     <div class="col-md-2">
-                        <h6 class="text-uppercase fw-bold"><a href="booking.html">My Bookings</a></h6>
+                        <h6 class="text-uppercase fw-bold"><a href="/booking">My Bookings</a></h6>
                     </div>
                     <div class="col-md-2">
                         <h6 class="text-uppercase fw-bold"><a href="contact.html">Contact</a></h6>
@@ -340,7 +340,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="main.js"></script>
-    <script src="sort.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sort.js"></script>
 </body>
 </html>
